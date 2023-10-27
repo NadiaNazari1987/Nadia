@@ -40,8 +40,8 @@ public class VaxterMain {
                     bevattnaVaxt = new Palm(vaxtNamnInput, vaxtLangdInput);
                 }
                 // skapar string variabel och sparar ner hur man bevattnar växten.
-                String bevatnaVaxten = bevattnaVaxt.bevattna();
-                JOptionPane.showMessageDialog(null, bevatnaVaxten);
+                String bevatnaVaxten = bevattnaVaxt.bevattna(); // bevattna metoden returnerar en string
+                JOptionPane.showMessageDialog(null, bevatnaVaxten); // skriver ut stringen
 
             } catch (Exception exception) {// avslutar programmet vid fel info (eller trycker på kryss-rutan i gui)
                 runProgram = false;

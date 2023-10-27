@@ -1,7 +1,7 @@
 package vaxter;
 
 public class Vaxt {
-    private String namn;//Privata instansvariabel är inkapsling(för den är private)
+    private String namn;//Privata instansvariabel är inkapslad(för den är private)
     private String vatskeTyp;
     private double langd;
 
