@@ -1,4 +1,4 @@
-package vaxter;
+package vaxter.model;
 
 public class Kottatande extends Vaxt implements BevattnaVaxt {
     private double vaskeMangd;// inkapsling- en enda instans variabel.

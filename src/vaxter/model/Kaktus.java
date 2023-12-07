@@ -1,4 +1,4 @@
-package vaxter;
+package vaxter.model;
 
 public class Kaktus extends Vaxt implements BevattnaVaxt {// infogar interface med implements
     private double vatskeMangd;//inkapsling

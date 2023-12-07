@@ -1,4 +1,4 @@
-package vaxter;
+package vaxter.model;
 
 public class Palm extends Vaxt implements BevattnaVaxt {
     private double vatskeMangd;// endast en instans variabel-Inkapsling

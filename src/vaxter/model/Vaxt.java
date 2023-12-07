@@ -1,4 +1,4 @@
-package vaxter;
+package vaxter.model;
 
 public class Vaxt {
     private String namn;//Privata instansvariabel är inkapslad(för den är private)

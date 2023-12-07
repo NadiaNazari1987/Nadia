@@ -1,7 +1,7 @@
 package vaxter.test;
 
 import org.junit.Test;
-import vaxter.Kaktus;
+import vaxter.model.Kaktus;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,4 +1,9 @@
-package vaxter;
+package vaxter.client;
+import vaxter.model.BevattnaVaxt;
+import vaxter.model.Kaktus;
+import vaxter.model.Kottatande;
+import vaxter.model.Palm;
+
 import javax.swing.*;
 
 public class VaxterMain {
