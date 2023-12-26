@@ -51,6 +51,13 @@ public abstract class Manniska {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public void printMe() {
+    @Override
+    public String toString() {
+        return "Manniska{" +
+                "fullstandigName='" + fullstandigName + '\'' +
+                ", personnummer='" + personnummer + '\'' +
+                ", adress='" + adress + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
     }
 }

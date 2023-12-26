@@ -10,11 +10,11 @@ public class MainWindows {
         JFrame huvudFonster = new JFrame();
         JButton knapp = new JButton();
         knapp.setText("Avbryt");
-        knapp.setBackground(Color.BLUE);
-        knapp.setForeground(Color.RED);
+        knapp.setBackground(Color.pink);
+        knapp.setForeground(Color.green);
 
         //knapp.setSize(100,100);
-        knapp.setBounds(50,50,100,100);
+        knapp.setBounds(70,70,200,300);
 
         // lägger till en actionListener objekt
         /*knapp.addActionListener(new ActionListener(){
@@ -31,7 +31,7 @@ public class MainWindows {
 
         huvudFonster.add(knapp);
 
-        huvudFonster.setSize(300,300);
+        huvudFonster.setSize(300,500);
         huvudFonster.setLayout(null);
         huvudFonster.setVisible(true);
     }

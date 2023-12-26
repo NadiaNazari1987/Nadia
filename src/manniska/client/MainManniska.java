@@ -20,13 +20,11 @@ public class MainManniska {
         Anstalld anstalld = new Anstalld("Nadia Nazari", "89754545467", "John Ericssonsgatan 234", 1965, 38735, 25000, "20%");
         Student studentAnna = new Student(400, "Uppsala", "Anna Andersson","196397534", "Styrmansgatan 5 ", 1932);
 
-        /*
+
         System.out.println(kund);
         System.out.println(chef);
         System.out.println(anstalld);
         System.out.println(studentAnna);
-
-         */
 
         studentAnna.setAdress("valhallagatan 126");
         studentAnna.setStudieOrt("Sundsvall");
@@ -35,22 +33,16 @@ public class MainManniska {
         int rabbat = studentAnna.getStudentRabbat();
         System.out.println(studentAnna.getFullstandigName() + " har följande rabbat " + rabbat);
 
-
         studentAnna.setStudieOrt("kista");
 
         int alder = studentAnna.getDateOfBirth();// när man använder get-funktionen och får ut något värde, så måste man spara det i en variabel.
         System.out.println("ålder är "+ alder);// och skriva ut variabeln sedan.
-
-
 
         kund.setVaruinkorg("mat");
         kund.setKundRabbat(300);
 
         String varukorg = kund.getVaruinkorg();// vi användning av get-funktionen måste man ange om det är ( String eller Int). parantesen ska vara tom.
         System.out.println("Det nya varuinkorgen för kunden innehåller " + varukorg);
-
-
-
 
         anstalld.setForsaljningsBonus("857665");
         anstalld.setFullstandigName("Kalle Andersson");
@@ -59,12 +51,8 @@ public class MainManniska {
         String adress = anstalld.getAdress();// vi användning av get-funktionen måste man ange om det är ( String eller Int). parantesen ska vara tom.
         System.out.println( "adressen till den nya anställden är följande "  + adress);
 
-
         chef.setFullstandigName("hassan hassan");
         chef.setBonus(5000);
-
-
-
 
         System.out.println(studentAnna.toString());
         System.out.println(studentAnna.toString());
@@ -74,16 +62,13 @@ public class MainManniska {
 
 
 
-        List<Manniska>Manniskasamling = new ArrayList<>();
-        Manniskasamling.add(kund);
-        Manniskasamling.add(anstalld);
-        Manniskasamling.add(chef);
+        List<Manniska> manniskaList = new ArrayList<>();
+        manniskaList.add(kund);
+        manniskaList.add(anstalld);
+        manniskaList.add(chef);
 
-        for (Manniska Manniska : Manniskasamling) {
-            Manniska.printMe();
+        for (Manniska manniska : manniskaList) {
+            System.out.println(manniska.toString());
         }
-
-
-
     }
 }
