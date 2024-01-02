@@ -1,5 +1,7 @@
 package bank.databarare;
 
+import java.util.Objects;
+
 public class Person {
 
     private String namn;
@@ -10,6 +12,10 @@ public class Person {
         this.namn = namn;
         this.personNummer = personNummer;
         this.adress = adress;
+    }
+
+    public Person(String personNummer) {
+        this.personNummer = personNummer;
     }
 
     public String getNamn() {
@@ -43,5 +49,18 @@ public class Person {
                 ", personNummer='" + personNummer + '\'' +
                 ", adress=" + adress +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(personNummer, person.personNummer);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(personNummer);
     }
 }

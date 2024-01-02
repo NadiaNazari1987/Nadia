@@ -14,6 +14,15 @@ public class BankKonto {
         this.person = person;
     }
 
+    public BankKonto(Person person){
+        this.person = person;
+    }
+
+    public BankKonto(boolean aktiv, Person person) {
+        this.aktiv = aktiv;
+        this.person = person;
+    }
+
     public boolean isAktiv() {
         return aktiv;
     }
@@ -63,11 +72,11 @@ public class BankKonto {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         BankKonto bankKonto = (BankKonto) o;
-        return aktiv == bankKonto.aktiv && belopp == bankKonto.belopp && Objects.equals(person, bankKonto.person);
+        return Objects.equals(person, bankKonto.person);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(aktiv, belopp, person);
+        return Objects.hash(person);
     }
 }

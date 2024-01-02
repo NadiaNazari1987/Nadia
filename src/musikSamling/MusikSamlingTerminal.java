@@ -34,16 +34,20 @@ public class MusikSamlingTerminal {
     // att göras metod  i client klassen.
     private void delete(Scanner anvandarInput, List<CdSkiva> cdSkivaList) {
         System.out.println("Vad heter artisten?");
+
         String artistInput = anvandarInput.next();
         System.out.println(" Vad heter albumet?");
+
         String albumInput = anvandarInput.next();
         CdSkiva cdSkiva = new CdSkiva(artistInput, albumInput);
         cdSkivaList.remove(cdSkiva);
     }
     private void laggTill(Scanner anvandarInput, List<CdSkiva> cdSkivaList) {
         System.out.println("Vad heter artisten?");
+
         String artistInput = anvandarInput.next();
         System.out.println(" Vad heter albumet?");
+
         String albumInput = anvandarInput.next();
         CdSkiva cdSkiva = new CdSkiva(artistInput, albumInput);
         cdSkivaList.add(cdSkiva);
