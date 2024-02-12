@@ -1,4 +1,4 @@
-package personListor.databarare;
+package personlistor.databarare;
 
 import kurs.databarare.Student;
 

@@ -1,8 +1,8 @@
-package personListor.client;
+package personlistor.client;
 
-import personListor.databarare.Kurs;
-import personListor.databarare.Larare;
-import personListor.databarare.Student;
+import personlistor.databarare.Kurs;
+import personlistor.databarare.Larare;
+import personlistor.databarare.Student;
 
 public class PersonClient {
     public static void main(String[] args) {

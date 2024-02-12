@@ -7,7 +7,7 @@ import bank.databarare.Person;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BankManager {
+public class BankHardCode {
     public static void main(String[] args) {
         List<BankKonto> bankKonto = new ArrayList<>();
 

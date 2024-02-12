@@ -1,0 +1,3 @@
+connectionString=jdbc:mysql://localhost:3306/studentportalen
+name=root
+password=Nadia

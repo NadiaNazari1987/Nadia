@@ -1,4 +1,4 @@
-package personListor.databarare;
+package personlistor.databarare;
 
 public class Person {
 
@@ -19,16 +19,7 @@ public class Person {
     public Person(String name) {
         this.name = name;
     }
-    @Override
-    public String toString() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", efterNamne='" + efterNamne + '\'' +
-                ", personnummer='" + personnummer + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", adress='" + adress + '\'' +
-                '}';
-    }
+
     public String getName() {
         return name;
     }
@@ -67,5 +58,16 @@ public class Person {
 
     public void setAdress(String adress) {
         this.adress = adress;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", efterNamne='" + efterNamne + '\'' +
+                ", personnummer='" + personnummer + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", adress='" + adress + '\'' +
+                '}';
     }
 }
