@@ -1,4 +1,4 @@
-package musikSamling;
+package musiksamling;
 
 import java.util.Objects;
 
